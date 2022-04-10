@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Feet
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Environmnet
   - 
   - Player
-  - 
-  - 
+  - Enemy
+  - Pushables
   - 
   - 
   - 

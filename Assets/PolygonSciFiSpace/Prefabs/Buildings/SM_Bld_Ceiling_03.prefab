@@ -166,6 +166,22 @@ PrefabInstance:
       value: 4.29
       objectReference: {fileID: 0}
     - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.39607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
       propertyPath: m_AreaSize.x
       value: 2
       objectReference: {fileID: 0}
@@ -246,6 +262,22 @@ PrefabInstance:
     - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
       propertyPath: m_Range
       value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78039217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.39607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
+      propertyPath: m_Intensity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6733478044577092488, guid: aa55ed67a10c9784da3bbf844193400a, type: 3}
       propertyPath: m_AreaSize.x
