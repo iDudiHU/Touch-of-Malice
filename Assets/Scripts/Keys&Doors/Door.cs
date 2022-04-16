@@ -6,7 +6,7 @@ using UnityEngine.Events;
 /// <summary>
 /// Class which handles a door's locking and unlocking mechanism
 /// </summary>
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Collider))]
 public class Door : MonoBehaviour
 {
     [Header("Settings")]

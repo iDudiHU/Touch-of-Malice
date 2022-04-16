@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// This class handles the control of a third person character controller.
@@ -31,6 +33,9 @@ public class ThirdPersonCharacterController : MonoBehaviour
     public GameObject doubleJumpEffect;
     [Tooltip("The effec to create when the player lands on the ground")]
     public GameObject landingEffect;
+    [Tooltip("The effec to create when the player is dashing")]
+    public Transform dashEffect;
+
 
     /// <summary>
     /// Description:
@@ -121,8 +126,15 @@ public class ThirdPersonCharacterController : MonoBehaviour
     }
 
     [Header("Speed Control")]
+    [Tooltip("The default speed at which to move the player")]
+    public float defaultMoveSpeed = 10f;
     [Tooltip("The speed at which to move the player")]
-    public float moveSpeed = 5f;
+    public float moveSpeed = 10f;
+    [Tooltip("The speed at which to dash the player")]
+    public float dashSpeed = 20f;
+    [Tooltip("The time how long the player dashes")]
+    public float dashTime = 0.25f;
+
     [Tooltip("The strength with which to jump")]
     public float jumpStrength = 8.0f;
     [Tooltip("The strength of gravity on this controller")]
@@ -205,6 +217,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
             moveDirection = transform.TransformDirection(moveDirection);
 
             // Apply the movement speed to the movement direction
+            if (Keyboard.current.leftShiftKey.wasPressedThisFrame)
+            {
+                StartCoroutine(Dash());
+            }
             moveDirection *= moveSpeed;
 
             // If the player has pressed the jump button, apply to the y movement the jump strength
@@ -276,10 +292,24 @@ public class ThirdPersonCharacterController : MonoBehaviour
         }
 
         // Pass the calculated move direction multipplied by the time inbetween freames to the charater controller move function
+        if (Keyboard.current.leftShiftKey.wasPressedThisFrame)
+        {
+            StartCoroutine(Dash());
+        }
         characterController.Move(moveDirection * Time.deltaTime);
     }
 
-    bool bounced = false;
+	IEnumerator Dash()
+	{
+        moveSpeed = dashSpeed;
+        dashEffect.gameObject.SetActive(true);
+        yield return new WaitForSeconds(dashTime);
+        moveSpeed = defaultMoveSpeed;
+        dashEffect.gameObject.SetActive(false);
+        yield return null;
+    }
+
+	bool bounced = false;
     /// <summary>
     /// Description:
     /// Bounces the player upwards with some multiplier by the jump strength

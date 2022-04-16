@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
             {
                 PlayerPrefs.SetInt("health", playerHealth.currentHealth);
             }
-
+            PlayerPrefs.SetInt("health", 0);
             playerHealth.currentHealth = PlayerPrefs.GetInt("health");
         }
         KeyRing.ClearKeyRing();

@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1698377993987516412
 Transform:
@@ -43,9 +43,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1698377993987516412}
     m_Modifications:
+    - target: {fileID: 1008404392026372, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wide_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4174149541080578, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_RootOrder
@@ -105,9 +113,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1698377993987516412}
     m_Modifications:
+    - target: {fileID: 1008404392026372, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wide_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4174149541080578, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_RootOrder
@@ -171,6 +187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Desk_End_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1090822837561816, guid: e18f0221fe48009489540ed0735c694f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4909927821426036, guid: e18f0221fe48009489540ed0735c694f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -229,9 +249,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1698377993987516412}
     m_Modifications:
+    - target: {fileID: 1008404392026372, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wide_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4174149541080578, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_RootOrder
@@ -295,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Decontamination_Shower_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1135906862656098, guid: f1a426e302059f449b05a13b5c47965c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4023976542821998, guid: f1a426e302059f449b05a13b5c47965c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -353,9 +385,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1698377993987516412}
     m_Modifications:
+    - target: {fileID: 1008404392026372, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Crate_Wide_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1049792234233108, guid: e766f33e0ec16d54599c071947759921, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4174149541080578, guid: e766f33e0ec16d54599c071947759921, type: 3}
       propertyPath: m_RootOrder

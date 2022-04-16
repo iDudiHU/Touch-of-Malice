@@ -36,6 +36,8 @@ public class Health : MonoBehaviour
     [Tooltip("The amount of time to wait before respawning")]
     public float respawnWaitTime = 3f;
 
+    public Oxygen playerOxygen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -122,13 +124,15 @@ public class Health : MonoBehaviour
         {
             c.enabled = false;
         }
-        transform.position = respawnPosition;
+        this.gameObject.GetComponentInParent<Transform>().position = respawnPosition;
+        //transform.position = respawnPosition;
         transform.rotation = Quaternion.identity;
         if (c != null)
         {
             c.enabled = true;
         }
         currentHealth = defaultHealth;
+        playerOxygen.AddOxygen(20);
     }
 
     /// <summary>
@@ -271,8 +275,13 @@ public class Health : MonoBehaviour
         }
         else
         {
-            GameOver();
-            Destroy(this.gameObject);
+            if (this.gameObject.tag == "Player") Respawn();
+			else
+			{
+                Destroy(this.gameObject);
+			}
+            //GameOver();
+            
         }      
     }
 
